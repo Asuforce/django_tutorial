@@ -15,4 +15,7 @@ $ docker run --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -d -p 3306:3306 mysq
 
 # Create database
 $ echo 'create database django_tutorial character set utf8' | mysql -h127.0.0.1 -P3306 -uroot
+
+# Migrate tables
+$ python manage.py migrate
 ```
